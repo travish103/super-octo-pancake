@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Taniti</title>
+    <title>JobLogBook Download</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -10,77 +10,50 @@
 <div class="homehead">
     <div class="logo">
         <p class="welcometo">Welcome to</p>
-        <p class="taniti">Taniti</p>
+        <p class="taniti">JobLogBook Download</p>
     </div>
 
-    <div class="islandlandscape">
-        <p>Discover your paradise</p>
-<!--        <img src="photo/DockbeachLandscape.jpg" alt = "Wooden dock extending off white sand beach with palm trees"/>-->
-    </div>
 </div>
 
 <nav class="mainNav">
     <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="booking.html">Book Now</a></li>
-        <li><a href="islandInfo.html">Island Information</a></li>
-        <li><a href="activities.html">Activities</a></li>
+        <li id="download"><a href="https://westerngovernorsuniversity-my.sharepoint.com/:u:/g/personal/thamm103_wgu_edu/IQAsNorOqaXgRrNfGx_kDSbUAQ_r7ESMryGAU8tKUM4RuiI?e=E96ZP8" class="active">Download</a></li>
+        <li><a href="https://gitlab.com/wgu-gitlab-environment/student-repos/thamm103/d424-software-engineering-capstone.git">GitLab Source</a></li>
     </ul>
 </nav>
 
 <div class="homeActivities">
-
     <div class="activity1">
-        <p class="title">Go Snorkeling</p>
-        <img src="photo/Snorkel.jpg" alt=""/>
-        <div class="actDescript"><p>Enjoy endless snorkeling across our vast beaches</p></div>
+        <p class="title">Track jobs</p>
+        <img src="photos/mainPage.png" alt=""/>
     </div>
-    
+
     <div class="activity2">
-        <p class="title">Visit our Beaches</p>
-        <img src="photo/swimBeach.jpg" alt=""/>
-        <div class="actDescript"><p>Sand beach? Rock beach? Take your pick</p></div>
+        <p class="title">Log activities</p>
+        <img src="photos/Kitchen.png" alt=""/>
     </div>
 
     <div class="activity3">
-        <p class="title">See the Volcano</p>
-        <img src="photo/volcano.jpg" alt=""/>
-        <div class="actDescript"><p>Enjoy the mountains, or the Volcano...</p></div>
+        <p class="title">Add photos</p>
+        <img src="photos/sink.png" alt=""/>
     </div>
-
-    <div class="activity4">
-        <p class="title">Soar on a Zipline</p>
-        <img src="photo/Zipline.jpg" alt=""/>
-        <div class="actDescript"><p>Zipline among the palm trees</p></div>
-    </div>
-
 </div>
+<script>
+    const element = document.querySelector('#download')
+    element.animate([
+        { opacity: 1},
+        { opacity: 0.5}
+    ], {
+            duration: 1000,
+        iterations: 100,
+        direction: 'alternate',
+        easing: 'ease-in-out',
 
-<div class="footPhoto">
 
-    </div>
+        }
+    );
 
-
-<div class="weather">
-    <img src="photo/animatedSun.svg"/>
-    <div class="weatherVals">
-        <p> Temperature: 86°F / 30°C </p>
-        <p> Calm Wind </p>
-        <p> Light waves </p>
-
-    </div>
-
-</div>
-<!--</div>-->
-
-<footer>
-    <a href="booking.html">Ready to Book Now?</a>
-    <a href="activities.html">Want to plan more?</a>
-    <a href="islandInfo.html">Learn more about us</a>
-    <p>All photos cited in readme</p>
-
-</footer>
-
+</script>
 </body>
 
 </html>

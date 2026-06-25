@@ -6,7 +6,7 @@
     /*background-color: lightblue;*/
 }
 html{
-    background-color: lightblue;
+    background-color: dimgray;
 }
 img{
     border-radius: 15px;
@@ -15,13 +15,14 @@ img{
 .mainNav ul {
     display: flex;
     gap: 10px;
+    min-width: 250px;
     list-style: none;
     justify-content: center;
     max-width: 1500px;
     align-items: center;
     margin: 0 auto;
-    border-bottom: 10px solid rgba(240, 128, 128, 0.35);
-    padding-bottom: 10px;
+    border-bottom: 10px solid black;
+    padding: 0 0 10px 0;
 
 }
 .mainNav ul li {
@@ -30,11 +31,12 @@ img{
     margin-top: 10px;
     height:50px;
     text-align: center;
-    flex: 1;
+    flex: 1 1 0;
     border-radius: 10px;
     list-style: none;
     color: black;
 }
+
 .mainNav ul li a {
     display: flex;
     align-items: center;
@@ -44,20 +46,14 @@ img{
     height: 100%;
     text-decoration: none;
     font-weight: bold;
-    font-family: cursive;
     font-size: 30px;
-    min-width: 250px;
 }
 .mainNav ul li:hover {
     text-decoration: underline;
 }
 .mainNav ul li .active {
-    background-image: url("/photo/animatedSun.svg");
-    background-repeat: no-repeat;
-    background-size: 80% auto;
-    background-position: center;
-    border-radius: 10px;
-    color: white;
+    /*border-radius: 10px;*/
+    box-shadow: 0 0 5px 5px white;
     text-shadow:
             -1px -1px 0 #000,
             1px -1px 0 #000,
@@ -65,6 +61,17 @@ img{
             1px 1px 0 #000;
     /*background-color: cyan;*/
 }
+/*.download {*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 0 5px 5px white;*/
+/*    text-shadow:*/
+/*            -1px -1px 0 #000,*/
+/*            1px -1px 0 #000,*/
+/*            -1px 1px 0 #000,*/
+/*            1px 1px 0 #000;*/
+/*    !*background-color: cyan;*!*/
+/*}*/
+
 /* endnavstuff */
 
 /* headSection*/
@@ -72,7 +79,9 @@ img{
     display: flex;
     max-width: 1500px;
     margin: 0 auto;
-    border-bottom: 10px solid rgba(240, 128, 128, 0.35);
+    align-items: center;
+    justify-content: center;
+    border-bottom: 10px solid black;
     border-radius: 15px;
 
 }
@@ -81,7 +90,7 @@ img{
     min-width:250px;
     height: 200px;
     width:300px;
-    background-color: azure;
+    background-color: lightslategrey;
     margin-bottom: 20px;
     margin-top: 20px;
     border-radius: 10px;
@@ -89,37 +98,16 @@ img{
 .welcometo{
     text-align: center;
     font-weight: bold;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 .taniti{
     text-align: center;
-    font-size: 50px;
-    font-family: cursive;
+    font-size: 30px;
     padding: 30px;
     font-style: italic;
     text-decoration: underline;
 }
-.islandlandscape{
-    flex:1;
-    background-image: url(/photo/DockbeachLandscape.jpg);
-    background-size:auto;
-    background-position: center;
-    display: flex;
-    height:200px;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 80px;
-    font-family: cursive;
-    text-shadow: 2px 2px 2px black ;
-    text-align: center;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-.islandlandscape p{
-    min-width: 1000px;
-/*    find min setting taht keeps from multilining*/
-}
+
 /*endheadSection*/
 
 /*heroSection*/
@@ -137,10 +125,9 @@ img{
     max-width: 1500px;
     margin: 0 auto;
     text-align: center;
-    font-family: cursive;
     font-size: 30px;
     padding-top: 80px;
-    border-bottom: 10px solid rgba(240, 128, 128, 0.67);
+    border-bottom: 10px solid black;
 
 }
 .title{
@@ -150,7 +137,14 @@ img{
     align-items: center;
     text-align: center;
     text-decoration: underline;
-    text-shadow: 1px 1px 1px #06bdff; /*maybe*/
+    font-weight: bold;
+    text-shadow:
+            -1px -1px 0 lightslategrey,
+            1px -1px 0 lightslategrey,
+            -1px 1px 0 lightslategrey,
+            1px 1px 0 lightslategrey;
+
+
 
 }
 .homeActivities img{
@@ -185,259 +179,8 @@ img{
 .activity3 img{
     flex:3;
 }
-.activity4 img{
-    flex:4;
+img:hover{
+    transition: all .3s ease-in-out;
+    transform: scale(1.2);
 }
 /*endHero*/
-
-/*footArea*/
-.weather{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    border: 4px solid black;
-    padding:20px;
-    border-radius: 10px;
-    margin-top: 50px;
-    text-decoration: underline;
-
-}
-.weather img{
-    max-width: 150px;
-    max-height: 150px;
-    padding-right: 50px;
-}
-.weatherVals{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    justify-content: center;
-    font-size: 30px;
-    font-family: cursive;
-
-}
-.footPhoto{
-    height: 250px;
-    background-image: url("/photo/overheadBeach.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    max-width: 1500px;
-    margin-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0;
-}
-footer{
-    margin-top: 20px;
-    padding-bottom: 80px;
-    border-top: 3px solid black;
-    background-color: #cedde7;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: row;
-    gap:100px;
-    justify-content: center;
-    text-align: center;
-    font-family: cursive;
-    font-size: 30px;
-    align-items: center;
-}
-/*endfootArea*/
-
-/*BOOKINGFORM*/
-.contactForm {
-    margin: 0 auto;
-    padding: 50px 0;
-    max-width: 1500px;
-    min-width: 900px;
-}
-.consultation h2, .consultation p, .consultation button {
-    grid-column: span 2;
-    text-align: center;
-}
-.contactForm {
-    border-top: 5px solid black;
-    margin: 0 auto;
-    text-align: center;
-    font-size: x-large;
-}
-.consultation {
-    margin: auto;
-    width: 50%;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 30px;
-    padding: 30px;
-    border: 3px solid black;
-    border-radius: 10px;
-    font-size: xx-large;
-
-}
-.contactForm input {
-    width: 100%;
-}
-.consultation label {
-    text-align: right;
-}
-.consultation .submitButton {
-    margin: auto;
-    font-size: x-large;
-    width: 30%;
-    height: 40px;
-    text-align: center;
-    align-items: center;
-    border-radius: 10px;
-}
-.consultation .submitButton:hover {
-    border: 3px solid green;
-}
-/*ENDBOOKINGFORM*/
-
-
-/*BOOKPAGE*/
-.booking{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: x-large;
-    padding-bottom: 50px;
-}
-.booking summary{
-    font-size: 35px;
-    font-weight: bold;
-    padding: 30px;
-    font-family: cursive;
-}
-.booking summary img{
-    width:40px;
-    height: 40px;
-    margin: 10px;
-}
-.booking p{
-    text-align: left;
-    max-width: 1200px;
-    font-size: 30px;
-    padding: 15px;
-}
-/*endbook*/
-
-
-/*Activitypage*/
-.activities1,
-.activities2,
-.activities3,
-.activities4{
-    display: flex;
-    flex-direction: column;
-    font-size: xx-large;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: cursive;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding:50px;
-
-
-}
-.allActivities summary{
-    padding-bottom: 30px;
-}
-.activities1 img,
-.activities2 img,
-.activities3 img,
-.activities4 img{
-    max-height: 200px;
-    max-width: 350px;
-
-    margin-bottom: 50px;
-}
-.imgBox{
-
-    display: flex;
-    gap:60px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-/*endActivitypage*/
-
-
-
-/*islandInfo*/
-.islandInfoBody{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    /*padding: 40px;*/
-}
-.islandInfoBody h2{
-    font-size: xx-large;
-    font-family: cursive;
-    text-decoration: underline;
-    padding-top: 50px;
-
-
-}
-.islandInfo p{
-    padding:10px;
-    font-size: 27px;
-    max-width: 1200px;
-    padding-bottom: 10px;
-    /*display: list-item;*/
-
-
-}
-.ruleStuff h2{
-    font-size: xx-large;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-bottom: 5px solid black;
-    font-family: cursive;
-
-
-}
-.ruleStuff{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 1500px;
-    gap: 150px;
-    margin: 0 auto;
-    padding-top:200px;
-}
-.ruleStuff p{
-    font-size: 30px;
-    align-items: center;
-    text-align: center;
-
-}
-.ruleStuff img{
-    max-width: 50px;
-    max-height: 50px;
-    padding: 10px;
-}
-.paying p{
-    border-bottom: 3px solid black;
-}
-.powerStuff img{
-    max-width: 100px;
-    max-height: 100px;
-    margin: auto;
-    display: block;
-}
-
-
-/*endislandInfo*/
